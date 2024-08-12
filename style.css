@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{  
+    background-image: url(https://images.unsplash.com/photo-1671726805768-575f88de945a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;  
+}
+.apply_box{
+    font-size: 30px;
+    max-width: 500px;
+    padding: 20px;
+    background-image: url(https://images.unsplash.com/photo-1639548206755-b20081a7cadc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fDNkfGVufDB8fDB8fHww);
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow:  4px 3px 5px ;
+    border-radius: 20px;
+}
+.title_small{
+font-size: 20px ;
+}.form_container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(200px,1fr));
+    gap: 40px;
+
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+.lable{
+    font-size: 15px;
+
+}
+.input,.select
+, .textarea{
+    padding: 6px,10px ;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.inputfocus{
+    outline: rgb(255, 0, 0);
+}
+.button_container{
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-image: url(https://media.istockphoto.com/id/2162805402/photo/a-bookshelf-filled-with-various-books-of-different-sizes-and-colors.webp?b=1&s=170667a&w=0&k=20&c=Fk9ysG6PxEI4pV2Und8H5lw4rBWdwU4fn-I6zq_1Urw=);
+    background-color: rgb(255, 221, 0);
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+.button:hover{
+background-color: #ccc;
+border: 2px solid red;
+color: black;
+transition: 0.3s ease-out;
+cursor: pointer;
+}
+.textarea_control{
+    grid-column: 1 / span 2;
+}
+.textarea_control textarea{
+    width: 100%;
+}
